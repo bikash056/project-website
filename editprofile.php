@@ -1,14 +1,5 @@
 <?php session_start();?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="style/main.css">
-<title>online matching website </title>
-<?php require_once "include/header.php";?>
-<div class="col-12">
-<h2> Edit profile </h2>
-<article>
+
 <?php
 //code for editprofile
 require_once "include/config.php";
@@ -62,19 +53,33 @@ echo '<font color="#000000"><ul class="custom-list-style"><li>'.$error.'</li></u
 //code for editprofile end
 ?>
 
-<form method="POST">
-<label for="name"> New Name</label>
-<input type="text" id="name" name="name" placeholder="Your new Name" value="<?php echo $name;?>" required>
-<label for="password">New Password</label>
-<input type="text" id="password" name="password" placeholder="Your New Password" value="<?php echo $password;?>" required>
-<label for="phonenumber">New Phone Number</label>
-<input type="text" id="phonenumber" name="phonenumber" placeholder="Your New Phone Number" value="<?php echo $phonenumber;?>" required>
-<label for="address">New Address</label>
-<input type="text" id="address" name="address" placeholder="Your New Address" value="<?php echo $address;?>" required>
-<label for="photo">New Photo</label>
-<input type="photo" id="photo" name="photo" placeholder="Your New Photo" value="<?php echo $photo;?>" required>
-<br> </br>
-<input type="submit" name="editprofile" value="Submit">
-</form>
-</article>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css"href="style/project.css">
+    <title>Edit profile</title>
+
+  </head>
+  <body>
+    <h2> Edit profile </h2>
+
+    <form method="POST">
+        <div  class="container">
+    <label for="name"> New Name</label>
+    <input type="text" id="name" name="name" placeholder="Your new Name" value="<?php echo $name;?>" required>
+    <label for="password">New Password</label>
+    <input type="text" id="password" name="password" placeholder="Your New Password" value="<?php echo $password;?>" required>
+    <label for="phonenumber">New Phone Number</label>
+    <input type="text" id="phonenumber" name="phonenumber" placeholder="Your New Phone Number" value="<?php echo $phonenumber;?>" required>
+    <label for="address">New Address</label>
+    <input type="text" id="address" name="address" placeholder="Your New Address" value="<?php echo $address;?>" required>
+    <label for="photo">New Photo</label>
+    <input type="photo" id="photo" name="photo" placeholder="Your New Photo" value="<?php echo $photo;?>" required>
+    <br> </br>
+    <input type="submit" name="editprofile" value="Submit">
+  </div>
+    </form>
+
+</html>
 <?php require_once "include/footer.php";?>

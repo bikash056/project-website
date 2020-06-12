@@ -57,23 +57,36 @@ echo '<font color="#ff0000"><ul class="custom-list-style"><li>'.$errors.'</li></
 
 ?>
 
-
 <!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href = "style/main.css">
-</head>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css"href="style/project.css">
+    <title>SIGN UP</title>
 
-<body>
 
-  <form method="POST">
-  <label for="name">UserName</label>
-  <input type="text" id="username" name="username" placeholder="Your username.." required>
-  <label for="email">Email</label>
-  <input type="email" id="email" name="email" placeholder="Your Email ID.." required>
-  <label for="password">Password</label>
-  <input type="password" id="password" name="password" placeholder="Password.." required>
-  <input type="submit" name="signup" value="Submit">
-  </form>
-</body>
+  </head>
+  <body>
+    <form method="POST">
+      <div  class="container">
+        <div class="imgcontainer">
+      <img src="images/user.png" alt="Avatar" class="avatar">
+    </div>
+        <div  class="container">
+    <label for="name">UserName</label>
+    <input type="text" id="username" name="username" placeholder="Your username.." required>
+
+    <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email ID.." required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Password.." required>
+<label for="Repeat password">Password</label>
+  <input type="password" placeholder="Repeat Password" name="password" id="password" required>
+<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <input type="submit" name="signup" value="Submit">
+      </div>
+    </form>
+
+
+  </body>
 </html>
